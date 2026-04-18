@@ -56,21 +56,21 @@ Example generated outputs:
 * Improve training stability (label smoothing, batch normalization, etc.)
 * Save and load trained model checkpoints
 
-
+---
 ## 📁 Project Structure
 .
-│   .gitignore
-│   README.md
-│   requirements.txt
-│
-├── images/
-│   └── sample_output/
+├── .gitignore                 # Files and directories to be ignored by Git
+├── README.md                  # Project documentation
+├── requirements.txt           # Python dependencies
+
+├── images/                    # Generated or sample images
+│   └── sample_output/         # Output samples from the model
 │       ├── epoch005.png
-│       └──...
-│        
-│
-└── notebooks/
-    └── Generative_Adversarial_Networks_(GAN's).ipynb
+│       ├── epoch010.png
+│       └── ...                
+
+├── notebooks/                 # Jupyter notebooks for experimentation
+    └── Generative_Adversarial_Networks_(GANs).ipynb
 
 
 ## Acknowledgements
