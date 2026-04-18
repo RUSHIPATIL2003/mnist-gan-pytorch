@@ -59,19 +59,18 @@ Example generated outputs:
 ---
 ## 📁 Project Structure
 .
-├── .gitignore                 # Files and directories to be ignored by Git
-├── README.md                  # Project documentation
-├── requirements.txt           # Python dependencies
+├── .gitignore                  # Files ignored by Git
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies
 
-├── images/                    # Generated or sample images
-│   └── sample_output/         # Output samples from the model
+├── images/                     # Generated images
+│   └── sample_output/          # Model outputs
 │       ├── epoch005.png
 │       ├── epoch010.png
-│       └── ...                
+│       └── ...
 
-├── notebooks/                 # Jupyter notebooks for experimentation
-    └── Generative_Adversarial_Networks_(GANs).ipynb
-
+├── notebooks/                  # Jupyter notebooks
+│   └── Generative_Adversarial_Networks_(GANs).ipynb
 
 ## Acknowledgements
 * Original GAN paper by Ian Goodfellow et al.
