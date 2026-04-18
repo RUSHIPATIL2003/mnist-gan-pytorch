@@ -1,5 +1,7 @@
-# Generative Adversarial Networks (GANs) Architecture
+# 🧠 Generative Adversarial Networks (GANs) - MNIST (PyTorch)
+
 ---
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
@@ -7,71 +9,105 @@
 ![Last Commit](https://img.shields.io/github/last-commit/RUSHIPATIL2003/mnist-gan-pytorch)
 
 ---
-This project implements a Generative Adversarial Network (GAN) using PyTorch to generate realistic handwritten digits from the MNIST dataset.
+
+## 📌 Overview
+
+This project implements a **Generative Adversarial Network (GAN)** using **PyTorch** to generate realistic handwritten digits from the **MNIST dataset**.
+
+GANs consist of two neural networks:
+
+* **Generator** → Creates fake images
+* **Discriminator** → Distinguishes real vs fake images
+
 ---
+
 ## 📄 Reference & Methodology
 
-This implementation is inspired by the original paper:
-**"Generative Adversarial Networks" by Ian J. Goodfellow et al.**
+📘 **"Generative Adversarial Networks" — Ian J. Goodfellow et al.**
 https://arxiv.org/pdf/1406.2661
 
-The model architecture (Generator and Discriminator design) and key hyperparameters have been derived from the methodology described in the paper. The project follows the foundational GAN training procedure, where a generator learns to produce realistic samples while a discriminator learns to distinguish between real and generated data.
+---
+
+## 🚀 Key Features
+
+* GAN implementation using PyTorch
+* Fully connected Generator & Discriminator
+* Adversarial training loop
+* Periodic visualization of generated images
+* Reproducible results (fixed random seeds)
 
 ---
-## Key Features
 
-* Implementation of GAN using PyTorch
-* Fully connected Generator and Discriminator networks
-* Adversarial training framework
-* Periodic visualization of generated samples
-* Reproducible setup with fixed random seeds
-
----
 ## 📊 Results
 
-The model progressively learns to generate realistic handwritten digits over training epochs.
+Generated samples are saved in:
 
-Example generated outputs:
-
-
-
-
-   Note: Generated images are saved during training in the images/gans/ directory.
+```
+images/sample_output/
+```
 
 ---
 
-## How to Run
+## ⚙️ How to Run
 
-1. Install dependencies:
-   pip install -r requirements.txt
+### Clone repo
 
-2. Run the notebook:
-   jupyter notebook gan_mnist.ipynb
+```
+git clone https://github.com/RUSHIPATIL2003/mnist-gan-pytorch.git
+cd mnist-gan-pytorch
+```
+
+### Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### Run notebook
+
+```
+jupyter notebook notebooks/Generative_Adversarial_Networks_(GANs).ipynb
+```
 
 ---
-## Future Improvements
-* Implement Deep Convolutional GAN (DCGAN) for better image quality
-* Train on more complex datasets (e.g., CIFAR-10)
-* Add TensorBoard for training visualization
-* Improve training stability (label smoothing, batch normalization, etc.)
-* Save and load trained model checkpoints
+
+## 🔮 Future Improvements
+
+* Implement DCGAN
+* Train on CIFAR-10
+* Add TensorBoard
+* Improve training stability
+* Save/load checkpoints
 
 ---
+
 ## 📁 Project Structure
-.
-├── .gitignore                  # Files ignored by Git
-├── README.md                   # Project documentation
-├── requirements.txt            # Python dependencies
 
-├── images/                     # Generated images
-│   └── sample_output/          # Model outputs
+```
+.
+├── .gitignore
+├── README.md
+├── requirements.txt
+
+├── images/
+│   └── sample_output/
 │       ├── epoch005.png
 │       ├── epoch010.png
 │       └── ...
 
-├── notebooks/                  # Jupyter notebooks
+├── notebooks/
 │   └── Generative_Adversarial_Networks_(GANs).ipynb
+```
 
-## Acknowledgements
-* Original GAN paper by Ian Goodfellow et al.
-* PyTorch documentation and tutorials
+---
+
+## 🙏 Acknowledgements
+
+* Ian Goodfellow et al.
+* PyTorch documentation
+
+---
+
+## 📜 License
+
+MIT License
