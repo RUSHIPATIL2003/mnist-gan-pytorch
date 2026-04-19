@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 Overview
+## 📌 Overview 
 
 This project implements a **Generative Adversarial Network (GAN)** using **PyTorch** to generate realistic handwritten digits from the **MNIST dataset**.
 
